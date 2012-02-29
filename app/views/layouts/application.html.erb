@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= @title %></title>
-  <%= stylesheet_link_tag    "application" %>
+  <title><%= title %></title>
+  <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+  <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+  <%= stylesheet_link_tag 'custom' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <!-- [if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
 </head>
-<body>
-
-<%= yield %>
-
-</body>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="header">
+      <div class="container">
+        <%= render "layouts/header" %>
+      </div>
+    </div>
+    <hr />
+    <div class="container main">
+      <section class="round span-24 last">
+        <div class="span-16 colborder">
+          <%= yield %>
+        </div>
+        <div class="span-7 last rightBar">
+          <%= render "layouts/tweets" %>
+          <br />
+          <div id="buyButton">
+          <%= link_to_unless_current buyButton, buy_path, :class => "shadow" %>
+          </div>
+          <div class="follow">
+            Follow us for updates:
+            <%= link_to twitterButton, "http://twitter.com/DartSight" %>
+            <%= link_to facebookButton, "http://facebook.com/DartSight" %>
+        </div>
+      </section>
+      <%= render "layouts/footer" %>
+    </div>
+  </body>
 </html>

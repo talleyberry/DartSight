@@ -1,0 +1,171 @@
+
+
+/*Body*/
+
+body {
+    background-color:#EEEEE2;
+    /*background-color:#002500;*/
+    
+}
+
+.body {
+    background-color:#EEEEE2;
+    padding:0px;
+    margin-top:0;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+.main {
+    margin-top:-15px;
+}
+
+/*Header*/
+
+.header {
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top:5px;
+    padding-bottom:0px;
+    color:#FFFFFF;
+    background-color:#FFFFFF;
+    background-image:url("http://tomoko.homestead.com/Grey_20to_20White_20Gradient_20Background.jpg");
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    width:100%;
+}
+
+#logo img{
+    margin-left:30px;
+    margin-top:5px;
+}
+
+nav {
+    float:right;
+    font-size: 1.5em;
+    margin-top:13px;
+}
+
+nav ul {
+    list-style-type:none;
+    display:inline-block;
+    color:white;
+}
+
+nav ul li {
+    list-style-type:none;
+    display: inline-block;
+    color:white;
+    padding: 0 0.7em;
+    background-color:#C50202;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+}
+
+section {
+    padding: 20px;
+}
+
+/*Header Links*/
+
+nav a {
+    color:#FFFFFF;
+}
+
+nav a:link {
+    text-decoration:none;
+}
+
+nav a:hover {
+    text-decoration:underline;
+    color:#FFFFFF;
+}
+
+nav a:visited {
+}
+
+/*Right Bar*/
+
+.rightBar {
+    
+}
+
+#buyButton a {
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+}
+
+.follow {
+    font-size:1.2em;
+    margin-top:30px;
+}
+
+.follow img {
+    vertical-align:sub;
+}
+
+/*Footer*/
+
+.footer {
+}
+
+.footnav {
+    float:right;
+}
+
+.footnav li {
+    list-style-type:none;
+    display:inline-block;
+    padding: 0 0.7em;
+}
+
+/*Footer Links*/
+
+.footnav a {
+    text-decoration:underline;
+    color:#000000;
+}
+
+.footnav a:link {
+    color:#000000;
+}
+
+.footnav a:hover {
+    color:#000000;
+}
+
+.footnav a:active {
+    color:#000000;
+}
+
+/*Text*/
+
+.summary { 
+    font-size:1.2em;
+    margin-top:0px;
+}
+
+.text {
+    font-size:1.2em;
+}
+
+/*Media*/
+
+.shadow {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+.video {
+    margin-right:-16px;
+}
+
+.floatRight {
+    float:right;
+    margin-right:-16px;
+}
