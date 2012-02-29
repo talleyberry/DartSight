@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>Page Title</title>
-</head>
-
-<body>
-
-
-
-</body>
-</html>
+<header>
+    <div class="span-14" id="logo">
+        <%= link_to_unless_current logo, root_path %>
+    </div>
+    <nav class="span-10 last">
+      <ul>
+        <li><%= link_to_unless_current "Home", root_path %></li>
+        <li><%= link_to_unless_current "Device", device_path %></li>
+        <li><%= link_to_unless_current "Method", method_path %></li>
+        <li><%= link_to_unless_current "Buy", buy_path %></li>
+      </ul>
+    </nav>
+</header>

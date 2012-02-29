@@ -1,13 +1,14 @@
 Dartsight::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/device"
-
-  get "pages/method"
-
-  get "pages/buy"
   
-  get "pages/contact"
+  match '/device', :to => 'pages#device'
+  
+  match '/method', :to => 'pages#method'
+  
+  match '/buy', :to => 'pages#buy'
+  
+  match '/contact', :to => 'pages#contact'
+  
+  root :to => 'pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

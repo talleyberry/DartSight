@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>Page Title</title>
-</head>
-
-<body>
-
-
-
-</body>
-</html>
+<footer>
+    <hr />
+    <div class="span-14">
+        &copy; 2012 DartSight | Questions? Email us at <a href="mailto:questions@dartsight.com">questions@dartsight.com</a>.
+    </div>
+    <div class="span-10 last">
+        <ul class="footnav">
+            <li><%= link_to_unless_current "Home", root_path %></li>
+            <li><%= link_to_unless_current "Device", device_path %></li>
+            <li><%= link_to_unless_current "Method", method_path %></li>
+            <li><%= link_to_unless_current "Buy", buy_path %></li>
+        </ul>
+    </div>
+</footer>
